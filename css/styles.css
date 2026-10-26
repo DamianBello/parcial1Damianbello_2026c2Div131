@@ -1,0 +1,133 @@
+
+:root {
+    --primary-color: #483D8B;       
+    --dark-gray: #dddddd;           
+    --light-gray: #fbfbfb;          
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+main h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+
+.controls-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+input[type="text"], 
+input[type="radio"] {
+    accent-color: var(--primary-color);
+}
+
+.search-box input {
+    padding: 8px 12px;
+    border: 1px solid var(--dark-gray);
+    border-radius: 4px;
+    width: 280px;
+    background-color: #ffffff;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-outline {
+    background-color: #ffffff;
+    color: var(--dark-gray);
+    border: 1px solid var(--dark-gray);
+}
+
+#users-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#users-container th, 
+#users-container td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+#users-container th {
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+
+#users-container tr:nth-child(odd) {
+    background-color: var(--light-gray);
+}
+
+#users-container .username {
+    color: var(--primary-color);
+    text-decoration: none;
+}

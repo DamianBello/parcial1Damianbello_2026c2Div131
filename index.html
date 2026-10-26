@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+<body>
+
+    <header>
+        <h1>Parcial 1 - División 131</h1>
+    </header>
+
+
+    <main>
+
+        <h2>Users</h2>
+
+
+        <hr>
+
+
+        <section class="controls-section">
+            <div class="top-row">
+
+                <div class="filter-options">
+                    <label>
+                        <input type="radio" name="status" value="active" checked> Active
+                    </label>
+                    <label>
+                        <input type="radio" name="status" value="inactive"> Inactive
+                    </label>
+                    <label>
+                        <input type="radio" name="status" value="all"> All
+                    </label>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search Users">
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button type="button" class="btn btn-primary">CREATE</button>
+                <button type="button" class="btn btn-outline">DEACTIVATE</button>
+                <button type="button" class="btn btn-outline">RESET PASSWORD</button>
+            </div>
+        </section>
+        <div id="users-container"></div>
+    </main>
+
+    <footer>
+        <p>Desarrollado por: Damián Bello</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
